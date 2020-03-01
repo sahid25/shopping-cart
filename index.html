@@ -29,8 +29,8 @@
                            <button id="phone-minus-button" class="btn btn-default">
                               <i class="fas fa-minus"></i>
                            </button>
-                           <input id="phn-cart" type="text" class="form-control text-center" value="1">
-                           <button id="phn-plus" class="btn btn-default">
+                           <input type="text" class="form-control text-center" id="phn-cart" value="1">
+                           <button class="btn btn-default" id="phn-plus">
                               <i class="fas fa-plus"></i>
                            </button>
                         </div>
@@ -48,11 +48,11 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button id="case-minus-button" class="btn btn-default">
+                           <button id="caseMinus-Btn" class="btn btn-default">
                               <i class="fas fa-minus"></i>
                            </button>
                            <input id="caseCart-input" type="text" class="form-control text-center" value="1">
-                           <button id="case-plus-button" class="btn btn-default">
+                           <button id="casePlus-Btn" class="btn btn-default">
                               <i class="fas fa-plus"></i>
                            </button>
 
@@ -128,7 +128,7 @@
       })
 
       //Case Plus Handler 
-      const casePlusBtn = document.getElementById("case-plus-button");
+      const casePlusBtn = document.getElementById("casePlus-Btn");
       casePlusBtn.addEventListener("click", function () {
 
          updateCartValue("caseCart-input", 1);
@@ -141,7 +141,7 @@
       })
 
       //Case Minus handler
-      const caseMinusBtn = document.getElementById("case-minus-button");
+      const caseMinusBtn = document.getElementById("caseMinus-Btn");
       caseMinusBtn.addEventListener("click", function () {
 
          updateCartValue("caseCart-input", -1);

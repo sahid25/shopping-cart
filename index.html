@@ -154,19 +154,19 @@
       })
 
       // updateCartValue Function 
-      function updateCartValue(id, givenNumber) {
+      function updateCartValue(id, cNumber) {
          const Number = document.getElementById(id).value;
          const NumberDigit = parseFloat(Number);
-         const total = NumberDigit + givenNumber;
+         const total = NumberDigit + cNumber;
          document.getElementById(id).value = total;
          return total;
       }
 
       //UpdateCartInnerText Function
-      function updateCartInnerText(id, givenNumber) {
+      function updateCartInnerText(id, cNumber) {
          const Number = document.getElementById(id).innerText;
          const NumberDigit = parseFloat(Number);
-         const total = NumberDigit + givenNumber;
+         const total = NumberDigit + cNumber;
          document.getElementById(id).innerText = total;
          return total;
       }
